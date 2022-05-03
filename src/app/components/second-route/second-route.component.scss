@@ -1,0 +1,16 @@
+:host {
+  display: block;
+}
+
+.table-wrapper {
+  padding: 0 20px;
+  width: 100vw;
+  overflow-x: scroll;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+}
+
+td.mat-cell {
+  padding: 0 20px;
+  white-space: nowrap;
+}

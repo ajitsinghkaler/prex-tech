@@ -1,0 +1,13 @@
+<button mat-button class="menu-trigger" (click)="isOpen = true">
+    Open Menu
+</button>
+
+<div class="side-menu" *ngIf="isOpen" [@sideMenu]>
+    <div class="menu-close" (click)="isOpen = false">
+        Close Menu
+    </div>
+    <div (click)="isOpen = false" routerLink="/app/{{route.route}}" class="menu-item" *ngFor="let route of routes">
+        {{ route.name }}
+    </div>
+</div>
+<router-outlet></router-outlet>
